@@ -67,6 +67,7 @@ h1 {
   background-image: url("../images/QuoteImage.jpg");
   background-size: contain;
   background-position: center;
+  /* redundant */
   flex: 0 0 100%;
 }
 
@@ -74,4 +75,76 @@ h1 {
 main {
   display: flex;
   flex-wrap: wrap;
+}
+
+.about-me {
+  display: flex;
+  background-color: #ddf5cb;
+  padding: 5%;
+  border-radius: 5px;
+  min-height: 19rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 180%;
+}
+
+.row {
+  display: flex;
+}
+
+.profile-image {
+  transition: all 0.5s ease-in-out;
+}
+.profile-img img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; */
+  padding: 2%;
+}
+
+.profile-img img:hover {
+  box-shadow: inset 0px 0px 8px #89ec92, 0 0 15px green;
+  transform: scale(1.1);
+}
+
+.about-me-h2 {
+  /* redundant */
+  flex: 0 0 100%;
+  padding: 8%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* setting flex grow 1 */
+.profile-img {
+  flex: 1;
+}
+
+/* style for bio class and setting flex-grow to 2 */
+.bio {
+  flex: 2;
+  padding: 2%;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+}
+/* creating space between about-me-h3 and about-me-content */
+.about-me-content {
+  margin: 1%;
+}
+
+/*indenting  second paragraph  */
+.about-me-content p:nth-of-type(2) {
+  text-indent: 5rem;
+}
+/* style for h3 header in about section */
+.about-me-h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 120%;
 }
