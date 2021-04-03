@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--c--bgreen);
+  line-height: 2rem;
 }
 
 /* >>>>>>>>>>>>>> header >>>>>>>>>>>>>>>>>  */
@@ -402,6 +403,10 @@ h2 {
   }
   .first-card .card-img {
     aspect-ratio: 1/1.4;
+  }
+
+  .about-me-content p:nth-of-type(2) {
+    text-indent: 0;
   }
 }
 
