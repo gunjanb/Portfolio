@@ -1,20 +1,25 @@
+:root {
+  --c--black: #000000;
+  --c--bgreen: #d8f3dc;
+  --c--offwhite: #edf0f1;
+  --c--dgreen: #6ca342;
+  --c--lgreen: #ddf5cb;
+  --c--gblack: #333333;
+  --c--yellow: #ffd82b;
+}
+
 /* body as flex container */
 body {
   display: flex;
   flex-direction: column;
-  background-color: #d8f3dc;
+  background-color: var(--c--bgreen);
 }
-
-/* for smooth scrolling from nav to corresponding section */
-/* html {
-  scroll-behavior: smooth;
-} */
 
 /* >>>>>>>>>>>>>> header >>>>>>>>>>>>>>>>>  */
 /* main header */
 header {
   display: flex;
-  background-color: black;
+  background-color: var(--c--black);
   justify-content: space-between;
   align-items: center;
   padding: 1%;
@@ -33,7 +38,7 @@ h1 {
 
 /*setting color for name in header */
 .name {
-  color: #edf0f1;
+  color: var(--c--offwhite);
   margin-right: auto;
   padding: 1%;
 }
@@ -50,14 +55,14 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
-  color: #edf0f1;
+  color: var(--c--offwhite);
   text-decoration: none;
   transition: all 2s ease 0s;
 }
 
 /* adding hover effect on anchor tags */
 .nav_bar a:hover {
-  color: #ddf5cb;
+  color: var(--c--yellow);
 }
 
 /* adding hover effect on name logo*/
@@ -73,7 +78,6 @@ h1 {
   background-image: url("../images/QuoteImage.jpg");
   background-size: contain;
   background-position: center;
-  /* redundant */
   flex: 0 0 100%;
 }
 
@@ -88,9 +92,9 @@ main {
 /* style for aboutme container */
 .about-me {
   display: flex;
-  background-color: #ddf5cb;
+  background-color: var(--c--lgreen);
   padding: 5%;
-  border-radius: 5px;
+  border-radius: 5%;
   min-height: 19rem;
   flex-wrap: wrap;
   /* justify-content: center; */
@@ -98,7 +102,7 @@ main {
 }
 
 .about-me-h2 {
-  /* redundant */
+  /* to have header occupy entire row */
   flex: 0 0 100%;
   padding: 8%;
   text-align: center;
@@ -168,7 +172,7 @@ h2 {
   border-radius: 5px;
   min-height: 19rem;
   flex-wrap: wrap;
-  background-color: #ddf5cb;
+  background-color: var(--c--lgreen);
   width: 100%;
   /* justify-content: center; */
   margin-bottom: 1.5rem;
@@ -198,8 +202,8 @@ h2 {
   padding: 1%;
   text-align: center;
   font-size: 1.2rem;
-  background-color: #333333;
-  color: #edf0f1;
+  background-color: var(--c--gblack);
+  color: var(--c--offwhite);
   /* to have card width of 24% each by flex-shrink and grow to 0 */
   flex: 0 0 24%;
   /* remove after media queries */
@@ -247,9 +251,9 @@ h2 {
   position: absolute;
   margin: 1%;
   padding: 1%;
-  background-color: black;
+  background-color: var(--c--black);
   font-size: 2rem;
-  color: #edf0f1;
+  color: var(--c--offwhite);
   border-radius: 5%;
 }
 
@@ -262,14 +266,14 @@ h2 {
 /*  scaling up app image on hover  and having box shadow */
 .card-img:hover {
   transform: scale(1.07);
-  box-shadow: 10px 5px 5px #333333;
+  box-shadow: 10px 5px 5px var(--c--gblack);
 }
 
 /* >>>>>>>>>> resume >>>>>>>>>> */
 
 .resume {
   width: 100%;
-  background-color: #ddf5cb;
+  background-color: var(--c--lgreen);
   display: flex;
   padding: 5%;
   border-radius: 5%;
@@ -293,7 +297,7 @@ h2 {
 /* >>>>>>>>>>>  contact  >>>>>>>>> */
 .contact {
   width: 100%;
-  background-color: #ddf5cb;
+  background-color: var(--c--lgreen);
   display: flex;
   padding: 5%;
   /* border-radius: 5%; */
@@ -328,17 +332,17 @@ h2 {
 
 .fa-github-square,
 .fa-linkedin {
-  color: black;
+  color: var(--c--black);
   font-size: 4rem;
 }
 
 .copyright-symbol {
-  color: black;
+  color: var(--c--black);
   font-weight: bold;
 }
 
 .fa-envelope {
-  color: black;
+  color: var(--c--black);
   font-size: 4.3rem;
 }
 
