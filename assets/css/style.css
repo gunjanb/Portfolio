@@ -5,6 +5,11 @@ body {
   background-color: #d8f3dc;
 }
 
+/* for smooth scrolling from nav to corresponding section */
+/* html {
+  scroll-behavior: smooth;
+} */
+
 /* >>>>>>>>>>>>>> header >>>>>>>>>>>>>>>>>  */
 /* main header */
 header {
@@ -335,4 +340,69 @@ h2 {
 .fa-envelope {
   color: black;
   font-size: 4.3rem;
+}
+
+/* >>>>>>>>>>>>>  media queries >>>>>>>> */
+/*media queries have to be at last*/
+/* for screen  size less then 768px i.e for iPads, Tablets */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .nav_bar ul {
+    padding: 5%;
+  }
+
+  .profile-img {
+    align-self: flex-start;
+    margin-top: 2.5rem;
+  }
+  /* so  that name  gets aligned in center  */
+  .name {
+    margin-right: 0;
+  }
+
+  .about-me-h2 {
+    padding: 1%;
+  }
+
+  .card {
+    flex: 0 0 46%;
+    max-width: 46%;
+  }
+
+  .first-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .first-card .card-img {
+    aspect-ratio: unset;
+  }
+
+  .app-name {
+    font-size: 1.5rem;
+  }
+}
+
+/* for screen size smaller than 480px i.e for mobiles*/
+
+@media screen and (max-width: 480px) {
+  .card {
+    flex: 0 0 98%;
+    max-width: 98%;
+  }
+  .first-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .first-card .card-img {
+    aspect-ratio: 1/1.4;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .quote-container {
+    display: none;
+  }
 }
