@@ -5,6 +5,7 @@ body {
   background-color: #d8f3dc;
 }
 
+/* >>>>>>>>>>>>>> header >>>>>>>>>>>>>>>>>  */
 /* main header */
 header {
   display: flex;
@@ -71,12 +72,15 @@ h1 {
   flex: 0 0 100%;
 }
 
+/* >>>>>>>>>>>>  Main section >>>>>>>>>>>>*/
 /* main container as flexbox */
 main {
   display: flex;
   flex-wrap: wrap;
 }
 
+/*>>>>>>>>>>>>>> about me >>>>>>>>>>>>>>>> */
+/* style for aboutme container */
 .about-me {
   display: flex;
   background-color: #ddf5cb;
@@ -84,32 +88,8 @@ main {
   border-radius: 5px;
   min-height: 19rem;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   margin-bottom: 25px;
-}
-
-h2 {
-  font-size: 180%;
-}
-
-.row {
-  display: flex;
-}
-
-.profile-image {
-  transition: all 0.5s ease-in-out;
-}
-.profile-img img {
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
-  /* object-fit: cover; */
-  padding: 2%;
-}
-
-.profile-img img:hover {
-  box-shadow: inset 0px 0px 8px #89ec92, 0 0 15px green;
-  transform: scale(1.1);
 }
 
 .about-me-h2 {
@@ -120,9 +100,35 @@ h2 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 180%;
+}
+
+.row {
+  display: flex;
+}
+/* adding transtion property for img  */
+.profile-image {
+  transition: all 0.5s ease-in-out;
+}
+/* profile img style */
+.profile-img img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; */
+  padding: 4%;
+}
+/* adding hover effect on profile img  with shadow and scaling*/
+.profile-img img:hover {
+  box-shadow: inset 0px 0px 8px #89ec92, 0 0 15px green;
+  transform: scale(1.1);
+}
+
 /* setting flex grow 1 */
 .profile-img {
   flex: 1;
+  align-self: center;
 }
 
 /* style for bio class and setting flex-grow to 2 */
@@ -147,4 +153,109 @@ h2 {
   text-align: center;
   font-weight: bold;
   font-size: 120%;
+}
+
+/*>>>>>>>>>>>>>> work >>>>>>>>>>>>>>>> */
+/* style for work container */
+.work {
+  display: flex;
+  padding: 5%;
+  border-radius: 5px;
+  min-height: 19rem;
+  flex-wrap: wrap;
+  background-color: #ddf5cb;
+  width: 100%;
+  /* justify-content: center; */
+  margin-bottom: 25px;
+}
+
+/* header to cover entire row */
+.work-h2 {
+  flex: 0 0 100%;
+  padding: 8%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* wrapper for cards */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 1%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #333333;
+  color: #edf0f1;
+  /* to have card width of 24% each by flex-shrink and grow to 0 */
+  flex: 0 0 24%;
+  /* remove after media queries */
+  max-width: 24%;
+  position: relative;
+  /* to have some space above the card when it wraps  */
+  margin-bottom: 1rem;
+  border-radius: 5%;
+}
+
+/* first card to occupy entire row  and making anchor link as well to occupy entire row so image occupy whole space*/
+.first-card,
+.first-card a {
+  flex: 0 0 100%;
+  /* remove after media queries */
+  max-width: 100%;
+}
+
+/*  kept for reference will discard it */
+/* to have  flex item and anchor tag to have same size we make anchor to be flex and occupy entire row */
+.first-card a {
+  display: flex;
+  /* flex: 0 0 100%; */
+}
+
+/* style for card images */
+.card-img {
+  width: 100%;
+  /*1.making height of an img tall */
+  aspect-ratio: 1/1.4;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 5%;
+  /*2.making height of an img tall */
+  /* height: 25rem; */
+}
+
+/* first card image aligned center to avoid streching */
+.first-card .card-img {
+  aspect-ratio: unset;
+  align-self: center;
+}
+
+/* application name in work section */
+.app-name {
+  position: absolute;
+  margin: 1%;
+  padding: 1%;
+  background-color: black;
+  font-size: 2rem;
+  color: #edf0f1;
+  border-radius: 5%;
+}
+
+/* having app name at bottom right corner */
+.caption-bottom-right {
+  align-items: flex-end; /*will move item to bottom*/
+  justify-content: flex-end; /*will move item to rightmost*/
+}
+
+/*  scaling up app image on hover  and having box shadow */
+.card-img:hover {
+  transform: scale(1.07);
+  box-shadow: 10px 5px 5px #333333;
 }
