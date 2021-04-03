@@ -259,3 +259,28 @@ h2 {
   transform: scale(1.07);
   box-shadow: 10px 5px 5px #333333;
 }
+
+/* >>>>>>>>>> resume >>>>>>>>>> */
+
+.resume {
+  width: 100%;
+  background-color: #ddf5cb;
+  display: flex;
+  padding: 5%;
+  border-radius: 5%;
+  min-height: 19rem;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.resume-h2 {
+  flex: 0 0 100%;
+  padding: 8%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.resume-para {
+  font-size: 1.2rem;
+}
