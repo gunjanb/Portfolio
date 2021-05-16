@@ -1,19 +1,23 @@
 # Portfolio
 
-This is my professional portfolio demonstrating my core skills in Flexbox, Media Queries, and CSS variables.
+This is my professional portfolio demonstrating my core skills in Flexbox, Media Queries, CSS variables, javascript, jQuery, Moment.js, Bootstrap, local storage,UIkit, and WebServer APIs.
 
 ## Key Learning:
 
-1. Usage of Flexbox for responsive web design.
-2. Media Queries for small, medium and large screen.
-3. Usage of semantic HTML elements and logical structuring of web page.
-4. Learned attributes of html elements.
-5. Consolidating redundant CSS and CSS layout.
-6. Usage of Github (uploading and publishing on github).
+- Usage of Flexbox for responsive web design.
+- Media Queries for small, medium and large screen.
+- Usage of semantic HTML elements and logical structuring of web page.
+- Learned attributes of html elements.
+- Consolidating redundant CSS and CSS layout.
+- Javascript,jQuery.
+- Moment.js
+- Bootstrap, UIkit CSSFramework.
+- WebServer APIs.
+- Usage of Github (uploading and publishing on github).
 
 ## ScreenShot
 
-![Portfolio](./assets/images/Portfolio.png)
+![Portfolio](./assets/images/UpdatedPortfolio.png)
 
 ## Deployed Application
 
