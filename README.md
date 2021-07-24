@@ -11,13 +11,32 @@ This is my professional portfolio demonstrating my core skills in Flexbox, Media
 - Consolidating redundant CSS and CSS layout.
 - Javascript,jQuery.
 - Moment.js
-- Bootstrap, UIkit CSSFramework.
+- Bootstrap,UIkit CSSFramework.
 - WebServer APIs.
-- Usage of Github (uploading and publishing on github).
+- Packages like-:
+
+  - Nodemon
+  - Path
+  - Express
+  - Express-session
+  - Express-handlebars
+  - mysql2
+  - dotenv
+  - bcrypt
+  - sequelize (ORM)
+  - connect-session-sequelize
+  - multer
+  - cloudinary
+  - multer-storage-cloudinary
+  - paypal-rest-sdk
+
+- Google Fonts
+- Font Awesome
+- Usage of Github (uploading and publishing on github, heroku).
 
 ## ScreenShot
 
-![Portfolio](./assets/images/UpdatedPortfolio.png)
+![Portfolio](./assets/images/updatedportfolio2.png)
 
 ## Deployed Application
 
